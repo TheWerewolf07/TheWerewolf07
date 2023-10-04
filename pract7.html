@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>To find the greatest number</title>
+</head>
+<body>
+    <h1 align=center>To find greatest number using if ELSE in javascript</h1>
+    <script>
+        var choice=parseInt(window.prompt("Enter 1 for two digit comparsion Enter 2 for three digit comparsion Enter 3 from Exit"));
+        switch(choice){
+            case 1:
+                  var a=parseInt(window.prompt("Enter first number:"));
+                  var b=parseInt(window.prompt("Enter second number:"));
+                  if(a>b){
+                    Document.write(a+"is greater than"+b);
+                  }
+                  else{
+                     Document.write(b+"is greater than"+a);
+                  }
+                  break;
+            case 2:
+                  var a=parseInt(window.prompt("Enter first number:"));
+                  var b=parseInt(window.prompt("Enter second number:"));
+                  var b=parseInt(window.prompt("Enter third number:"));
+                  if(a>b && a>c){
+                    Document.write(a+"is greater than"+b+"and"+c);
+                  }
+                  else if(b>c){
+                    Document.write(b+"is greater than"+a+"and"+c);
+                  }
+                else{
+                    Document.write(c+"is greater than"+a+"and"+b);
+                }Document.write(b+"is greater than"+a+"and"+c)
+                break;
+            case 3:
+                 Document.write("Operation ended!!!");
+                 break;
+            default:
+                 Document.write("Invailed choice!!!");
+                 break;
+
+        }
+    </script>
+    </body>
+    </html>
